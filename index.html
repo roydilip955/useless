@@ -3,24 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snack Recommender</title>
-    <link rel="stylesheet" href="style.css"> <!-- Linking CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Emotion Selector</title>
 </head>
 <body>
-    <div class="container">
-        <h2>Snack Recommender</h2>
-        <p>Select your mood:</p>
-        <form id="moodForm" onsubmit="submitMood(event)">
-            <select id="mood">
-                <option value="happy">Happy</option>
-                <option value="sad">Sad</option>
-                <option value="stressed">Stressed</option>
-                <option value="tired">Tired</option>
-                <option value="excited">Excited</option>
-            </select>
-            <button type="submit">Get Snack Recommendation</button>
-        </form>
-    </div>
-    <script src="script.js"></script> <!-- Linking JavaScript -->
+    <ul class="example-2">
+        <li class="icon-content">
+            <a href="happy.html" aria-label="happy" data-social="happy">
+                <div class="filled"></div>
+                😀
+            </a>
+            <div class="tooltip">Smiling</div>
+        </li>
+        <li class="icon-content">
+            <a href="sad.html" aria-label="Sad" data-social="sad">
+                <div class="filled"></div>
+                😢
+            </a>
+            <div class="tooltip">Sad</div>
+        </li>
+        <li class="icon-content">
+            <a href="angry.html" aria-label="Angry" data-social="angry">
+                <div class="filled"></div>
+                😡
+            </a>
+            <div class="tooltip">Angry</div>
+        </li>
+        <li class="icon-content">
+            <a href="romantic.html" aria-label="Romantic" data-social="romantic">
+                <div class="filled"></div>
+                ❤️
+            </a>
+            <div class="tooltip">Romantic</div>
+        </li>
+        <li class="icon-content">
+            <a href="tired.html" aria-label="Tired" data-social="tired">
+                <div class="filled"></div>
+                😴
+            </a>
+            <div class="tooltip">Tired</div>
+        </li>
+        <li class="icon-content">
+            <a href="excited.html" aria-label="Excited" data-social="excited">
+                <div class="filled"></div>
+                🎉
+            </a>
+            <div class="tooltip">Excited</div>
+        </li>
+    </ul>
 </body>
 </html>

@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full height of viewport */
+  margin: 0;
+  background-image: url('images/dosa.jpg'); /* Background image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+}
+
+.image-container {
+  text-align: center; /* Center text and images */
+}
+
+.example-2 {
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-gap: 20px; /* Space between icons */
+}
+
+.icon-content {
+  position: relative;
+}
+
+.icon-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px; /* Increased size */
+  height: 80px; /* Increased size */
+  font-size: 2em; /* Make the emojis larger */
+  border-radius: 50%; /* Rounded buttons */
+  color: #4d4d4d; /* Default text color */
+  background-color: rgba(255, 255, 255, 0.8); /* Default background color for buttons */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+  position: relative; /* Needed for filled effect */
+  overflow: hidden; /* Clip the filled background */
+}
+
+.icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%); /* Box shadow on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+.icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: all 0.3s ease-in-out; /* Smooth transition for filled effect */
+}
+
+.icon-content a:hover .filled {
+  height: 100%; /* Expand filled background on hover */
+}
+
+.icon-content a[data-social="happy"] .filled,
+.icon-content a[data-social="happy"]:hover {
+  background-color: #ffe600; /* Yellow for happy */
+}
+
+.icon-content a[data-social="sad"] .filled,
+.icon-content a[data-social="sad"]:hover {
+  background-color: #007bff; /* Blue for sad */
+}
+
+.icon-content a[data-social="angry"] .filled,
+.icon-content a[data-social="angry"]:hover {
+  background-color: #dc3545; /* Red for angry */
+}
+
+.icon-content a[data-social="romantic"] .filled,
+.icon-content a[data-social="romantic"]:hover {
+  background-color: #ff69b4; /* Pink for romantic */
+}
+
+.icon-content a[data-social="tired"] .filled,
+.icon-content a[data-social="tired"]:hover {
+  background-color: #6c757d; /* Gray for tired */
+}
+
+.icon-content a[data-social="excited"] .filled,
+.icon-content a[data-social="excited"]:hover {
+  background-color: #28a745; /* Green for excited */
+}
+
+.icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #111212;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
