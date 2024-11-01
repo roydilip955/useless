@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Recommender</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking CSS -->
+</head>
+<body>
+    <div class="container">
+        <h2>Snack Recommender</h2>
+        <p>Select your mood:</p>
+        <form id="moodForm" onsubmit="submitMood(event)">
+            <select id="mood">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="stressed">Stressed</option>
+                <option value="tired">Tired</option>
+                <option value="excited">Excited</option>
+            </select>
+            <button type="submit">Get Snack Recommendation</button>
+        </form>
+    </div>
+    <script src="script.js"></script> <!-- Linking JavaScript -->
+</body>
+</html>

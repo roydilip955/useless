@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Snack Recommendation</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking CSS -->
+</head>
+<body>
+    <div class="container">
+        <h2>Your Snack Recommendation</h2>
+        <p id="recommendation"></p>
+        <a href="index.html">Choose Another Mood</a>
+    </div>
+    <script>
+        // Function to get URL parameter
+        function getMoodFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get("mood");
+        }
+
+        // Display snack recommendation based on mood
+        function displayRecommendation() {
+            const mood = getMoodFromURL();
+            const recommendation = document.getElementById("recommendation");
+            let snack;
+
+            switch (mood) {
+                case "happy":
+                    snack = "Chocolate chip cookies or a fruity smoothie!";
+                    break;
+                case "sad":
+                    snack = "A warm bowl of soup or some comfort chocolate.";
+                    break;
+                case "stressed":
+                    snack = "Try some mixed nuts or dark chocolate for relaxation.";
+                    break;
+                case "tired":
+                    snack = "Grab a coffee and an energy bar for a quick boost!";
+                    break;
+                case "excited":
+                    snack = "Popcorn or spicy chips to match your energy!";
+                    break;
+                default:
+                    snack = "A delicious snack of your choice!";
+            }
+
+            recommendation.textContent = `We recommend: ${snack}`;
+        }
+
+        // Call the function when the page loads
+        displayRecommendation();
+    </script>
+</body>
+</html>
