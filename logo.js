@@ -22,6 +22,6 @@ window.addEventListener("load", () => {
   });
   
   function goToNextPage() {
-    window.location.href = "nextpage.html"; // Link to the next page
+    window.location.href = "index.html"; // Link to the next page
   }
   
