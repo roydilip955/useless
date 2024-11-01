@@ -13,13 +13,11 @@
         <a href="index.html">Choose Another Mood</a>
     </div>
     <script>
-        // Function to get URL parameter
         function getMoodFromURL() {
             const params = new URLSearchParams(window.location.search);
             return params.get("mood");
         }
 
-        // Display snack recommendation based on mood
         function displayRecommendation() {
             const mood = getMoodFromURL();
             const recommendation = document.getElementById("recommendation");
@@ -41,6 +39,9 @@
                 case "excited":
                     snack = "Popcorn or spicy chips to match your energy!";
                     break;
+                case "angry":
+                    snack = "Crunchy pretzels or spicy nachos to vent your energy!";
+                    break;
                 default:
                     snack = "A delicious snack of your choice!";
             }
@@ -48,7 +49,6 @@
             recommendation.textContent = `We recommend: ${snack}`;
         }
 
-        // Call the function when the page loads
         displayRecommendation();
     </script>
 </body>

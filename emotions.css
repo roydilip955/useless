@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of viewport */
+    margin: 0;
+    background-image: url(''); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    color: #fff; /* Text color for better readability */
+  }
+  
+  .emotion-container {
+    text-align: center;
+    width:50%;
+    height:50%; /* Center text */
+  }
+  p{
+    color: black;
+    font-size: 3em;
+  }
+  
+  h1 {
+    color: black;
+    font-size: 4em; /* Heading size */
+  }
+  
+  ul {
+    color: black;
+    list-style-type: none; /* No bullet points */
+    padding: 0; /* Remove default padding */
+    font-size: 2em;
+  }
+  
+  a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Text color */
+  }
+  
+  a:hover {
+    color: #ffd700; /* Change color on hover */
+  }
+  
