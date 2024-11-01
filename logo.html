@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Page 1</title>
-    <link rel="stylesheet" href="logo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Intro</title>
+  <link rel="stylesheet" href="logo.css">
+  <!-- Import a Google Font for styling the app name -->
+  <link href="index.html" rel="stylesheet">
 </head>
 <body>
-    <p>This is the first page.</p>
-    <a href="front.html">Next</a>
+  <!-- Logo Screen -->
+  <div class="logo-screen" id="logoScreen">
+    <div class="logo-container" id="logoContainer">
+      <img src="bite.jpg" alt="App Logo" class="logo">
+    </div>
+  </div>
+
+  <!-- Main Screen -->
+  <div class="main-screen" id="mainScreen">
+    <h1 class="app-name">SNACK BITE</h1>
+    <button class="next-button" onclick="goToNextPage()">Explore</button>
+  </div>
+
+  <script src="logo.js"></script>
 </body>
 </html>

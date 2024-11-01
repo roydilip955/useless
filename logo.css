@@ -1,0 +1,87 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  /* Background transition for logo screen */
+  .logo-screen {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #1a2a6c, #b21f1f, #fdbb2d);
+    z-index: 2;
+    transition: opacity 1s ease;
+  }
+  
+  /* Logo container positioned below the center */
+  .logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 2s ease;
+    transform: translateY(50px); /* Move the logo container slightly below the center */
+  }
+  .logo {
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: transform 2s ease;
+  }
+  
+  /* Main screen styles (hidden initially) */
+  .main-screen {
+    display: none;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(225, 130, 52, 0.875), rgb(144, 32, 152));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* App name styling */
+  .app-name {
+    font-size: 2.5em;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #555;
+  }
+  
+  /* Button styling */
+  .next-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .next-button:hover {
+    background-color: #666;
+    transform: scale(1.05);
+  }
+  

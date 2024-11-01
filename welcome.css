@@ -1,0 +1,28 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center content horizontally */
+}
+
+/* Button Styles */
+.custom-button {
+    background: linear-gradient(to right, #FFD700, #FF9800); /* Change background color */
+    background-clip: text;
+    -webkit-background-clip: text; /* For compatibility with older browsers */
+    color: transparent;
+    border: none;
+    border-radius: 50px; /* Adjust as needed */
+    padding: 20px 40px; /* Increase padding for size */
+    text-align: center;
+    font-size: 24px; /* Increase font size */
+    font-weight: bold;
+    position: relative; /* Needed for layering effects */
+    overflow: hidden; /* Needed for animation effects */
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    transition: all 0.3s ease; /* Enables smooth transitions */
+}
+
+/* ...other styles remain the same... */
